@@ -10,7 +10,6 @@ import UserPermissions from './general/UserPermissions';
 import NotFound from "./general/NotFound";
 
 const LogInPage = lazy(() => import('./Login/LogInPage.jsx'));
-const ResetPasswordPage = lazy(() => import('./userManagementPage/ResetPasswordPage'));
 const DashboardPage = lazy(() => import('./dashboardPage/dashboardPage'));
 
 createRoot(document.body).render(
@@ -31,7 +30,6 @@ createRoot(document.body).render(
 									</UserPermissions>
 								} />
 
-								<Route path='/manage_login' element={<ResetPasswordPage />} />
 								<Route path="*" element={<NotFound />} />
 							</Route>
 						</Routes>

@@ -1,4 +1,4 @@
-const SHUTDOWN_AT = Date.parse("2026-09-01T18:00:00+08:00");
+const SHUTDOWN_AT = Date.parse("2026-10-01T18:00:00+08:00");
 
 export async function onRequest(context) {
     if (Date.now() < SHUTDOWN_AT) {
