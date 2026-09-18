@@ -3,9 +3,8 @@ import styles from "./notFound.module.scss";
 function NotFound() {
 	return (
 		<div className={styles["not-found"]}>
-			<img src="not-found.webp" alt="Not Found" width={"200px"} height={"200px"}/>
 			<h2>Page Not Found</h2>
-			<p>Quick, fall back in before the Officer notices!</p>
+			<p>Were you meant to navigate somewhere on the new portal? Or did just lose your way?</p>
 		</div>
 	);
 }

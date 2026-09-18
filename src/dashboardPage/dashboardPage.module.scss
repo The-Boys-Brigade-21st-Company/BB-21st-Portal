@@ -58,10 +58,7 @@
     >div {
         background: #f6f6f6;
         border-radius: 10px;
-
-        &:not(:first-of-type) {
-            padding: 20px;
-        }
+        padding: 20px;
     }
 
     input {
@@ -178,20 +175,7 @@
 }
 
 .access_levels {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 10px;
-
-    div {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: var(--legend);
-    }
-
-    p {
-        font-size: 14px;
-    }
+    line-height: 1.5;
 }
 
 @media (max-width: 800px) {

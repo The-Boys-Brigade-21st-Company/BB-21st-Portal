@@ -44,25 +44,6 @@ const LogInPage = () => {
 		return () => unsub();
 	}, [navigate])
 
-	useEffect(() => {
-		if (Hls.isSupported()) {
-			const hls1 = new Hls();
-			hls1.loadSource("/intro_vid/playlist.m3u8");
-			hls1.attachMedia(videoRef1.current);
-
-			const hls2 = new Hls();
-			hls2.loadSource("/intro_vid/playlist.m3u8");
-			hls2.attachMedia(videoRef2.current);
-		} else {
-			if (videoRef1.current.canPlayType("application/vnd.apple.mpegurl")) {
-				videoRef1.current.src = "/intro_vid/playlist.m3u8";
-			}
-			if (videoRef2.current.canPlayType("application/vnd.apple.mpegurl")) {
-				videoRef2.current.src = "/intro_vid/playlist.m3u8";
-			}
-		}
-	}, []);
-
 	const handleClick = () => {
 		clientRef.current.requestAccessToken({ prompt: "consent" });
 	};
@@ -113,12 +94,6 @@ const LogInPage = () => {
 		<>
 			<div className='error-container'></div>
 			<div className={styles.login}>
-
-				<div className={styles.video_container}>
-					<img src="slide 2.webp" alt="Background Image" />
-					<video ref={videoRef1} onContextMenu={(e) => e.preventDefault()} autoPlay muted loop playsInline className={styles.video_main} />
-					<video ref={videoRef2} onContextMenu={(e) => e.preventDefault()} autoPlay muted loop playsInline className={styles.video_overlay} />
-				</div>
 				<form onSubmit={submitForm} noValidate>
 					<img src="coy logo.webp" alt='BB Logo' width={"120px"} height={"120px"} />
 
@@ -150,7 +125,7 @@ const LogInPage = () => {
 							Google
 						</button>
 					</div>
-					<p onClick={() => navigate('/parade_notice')}>View Parade Notice <i className='fa-solid fa-arrow-right'></i></p>
+					<p onClick={() => window.open("https://portal.bb21coy.workers.dev/parade_notice", "_blank")}>View Parade Notice <i className='fa-solid fa-arrow-right'></i></p>
 				</form>
 			</div>
 		</>
