@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./general.scss";
-import "./errorContainer.scss"
+import "./general.css";
+import "./errorContainer.css"
 
 const Layout = () => {
 	return (

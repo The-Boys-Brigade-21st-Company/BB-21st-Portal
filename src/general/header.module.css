@@ -8,7 +8,7 @@ header {
     z-index: 3;
     position: sticky;
     top: 0;
-    background: rgba($color: white, $alpha: 0.85);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(3px);
     padding: 8px 30px;
     display: flex;
@@ -73,7 +73,6 @@ header {
             font-size: 12px;
         }
 
-        // logout
         &:last-of-type {
             background: #26284B;
             color: white;
@@ -82,7 +81,6 @@ header {
     }
 }
 
-// profile icon
 div[data-image] {
     width: 30px;
     height: 30px;
@@ -114,7 +112,7 @@ div[data-logout]::before {
     width: 200px;
     top: 70px;
     background: white;
-    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -155,7 +153,7 @@ div[data-logout]::before {
     pointer-events: none;
     transition: opacity 0.3s ease-in-out;
     z-index: 9;
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .sidebar {
@@ -169,11 +167,10 @@ div[data-logout]::before {
     flex-direction: column;
     gap: 30px;
     top: 0;
-    box-shadow: -5px 0 5px rgba($color: #000000, $alpha: 0.4);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.4);
     transition: right 0.3s ease-in-out;
     overflow-y: auto;
 
-    // profile and close button
     >div:first-of-type {
         display: flex;
         justify-content: space-between;
@@ -215,7 +212,6 @@ div[data-logout]::before {
         }
     }
 
-    // login and logout button
     button[data-main-button] {
         background: #26284B;
         color: white;

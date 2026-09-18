@@ -5,7 +5,7 @@ import { useUser } from './UserContext'
 import { signOut, onAuthStateChanged } from "@firebase/auth";
 import { doc, getDoc } from "@firebase/firestore";
 import { auth, db } from "../firebase";
-import styles from './header.module.scss'
+import styles from './header.module.css'
 
 const Header = () => {
 	const navigate = useNavigate();

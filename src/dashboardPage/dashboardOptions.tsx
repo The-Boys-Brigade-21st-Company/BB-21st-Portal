@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import styles from './dashboardPage.module.scss'
+import styles from './dashboardPage.module.css'
 import type { CSSProperties } from "react";
 
 type DashboardOptionsProps = {

@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { showMessage } from '../general/handleServerError';
-import styles from './logInPage.module.scss'
-import "../general/general.scss";
+import styles from "./logInPage.module.css"
 import { auth } from "../firebase";
 import axios from 'redaxios';
-import Hls from "hls.js";
 import { signInWithEmailAndPassword, onAuthStateChanged, fetchSignInMethodsForEmail, signInWithCredential, signInWithPopup, OAuthProvider, GoogleAuthProvider } from "@firebase/auth";
 
 // To log in, accounts can only be created by existing users
@@ -20,18 +18,9 @@ const LogInPage = () => {
 	const videoRef2 = useRef(null);
 
 	useEffect(() => {
-		const vids = document.querySelectorAll("video");
-		vids.forEach(v => v.playbackRate = 0.7);
-
 		const unsub = onAuthStateChanged(auth, (user) => {
 			if (user) navigate('/home')
 		})
-
-		const link = document.createElement('link');
-		link.rel = 'preload';
-		link.as = 'image';
-		link.href = "/slide 2.webp";
-		document.head.appendChild(link);
 
 		if (!window.google) return;
 		clientRef.current = window.google.accounts.oauth2.initTokenClient({

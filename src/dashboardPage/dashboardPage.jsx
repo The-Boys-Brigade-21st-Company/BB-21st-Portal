@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Loading from '../general/Loading';
 import DashboardOptions from './dashboardOptions';
-import styles from './dashboardPage.module.scss';
+import styles from './dashboardPage.module.css';
 import { useUser } from '../general/UserContext';
 import { useNavigate } from 'react-router-dom';
 

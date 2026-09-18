@@ -1,4 +1,4 @@
-import styles from "./footer.module.scss"
+import styles from "./footer.module.css"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useUser } from "./UserContext"

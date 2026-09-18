@@ -9,7 +9,7 @@ import ErrorBoundary from "./general/ErrorBoundary";
 import UserPermissions from './general/UserPermissions';
 import NotFound from "./general/NotFound";
 
-const LogInPage = lazy(() => import('./logInPage/LogInPage'));
+const LogInPage = lazy(() => import('./Login/LogInPage.jsx'));
 const ResetPasswordPage = lazy(() => import('./userManagementPage/ResetPasswordPage'));
 const DashboardPage = lazy(() => import('./dashboardPage/dashboardPage'));
 

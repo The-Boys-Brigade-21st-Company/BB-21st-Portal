@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { showMessage } from '../general/handleServerError'
 import { useNavigate } from 'react-router-dom'
 import { useUser } from '../general/UserContext'
-import styles from './resetPasswordPage.module.scss'
+import styles from './resetPasswordPage.module.css'
 import { updatePassword, updateEmail, onAuthStateChanged, signOut, linkWithPopup, OAuthProvider, unlink, GoogleAuthProvider } from "@firebase/auth";
 import { auth } from "../firebase";
 
