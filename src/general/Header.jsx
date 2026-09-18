@@ -20,7 +20,7 @@ const Header = () => {
 	const baseTabs = {
 		"statistics": { "My Attendance": ["/user_attendance", "'\\f4fd'"], "My Awards": ["/user_awards", "'\\f559'"], "My Inspection Results": ["/user_inspections", "'\\e3c7'"] },
 		"management": { "User Management": ["/user_management", "'\\f0c0'"], "Parades & Attendance": ["/attendance_management", "'\\f15b'"], "Awards Management": ["/awards_management", "'\\f5f3'"], "Result Generation": ["/generate_result", "'\\f570'"], "Uniform Inspection": ["/uniform_inspection", "'\\e3c7'"] },
-		"others": { "Resources": ["/resources", "'\\f02d'"], "Manage Login": ["/manage_login", "'\\f023'"], "Help": ["/help", "'\\003f'"], "Parade Notice": ["/parade_notice", "'\\f15b'"], "Calendar": ["/calendar", "'\\f133'"] }
+		"others": { "Resources": ["/resources", "'\\f02d'"], "Parade Notice": ["/parade_notice", "'\\f15b'"], "Calendar": ["/calendar", "'\\f133'"] }
 	}
 	const [tabs, setTabs] = useState(baseTabs);
 

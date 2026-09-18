@@ -47,7 +47,6 @@ const DashboardPage = () => {
                 </>}
 
                 <DashboardOptions title="Resources" icon="book" url="/resources" description='View Resources for Badgeworks' migrating />
-                <DashboardOptions title="Manage Login" icon="lock" url="/manage_login" description='Change your password and link 3rd Party Providers' />
             </div>
 
             <div className={styles['others']}>
