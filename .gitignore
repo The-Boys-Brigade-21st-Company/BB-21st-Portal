@@ -26,3 +26,4 @@ dist-ssr
 stats.html
 coverage/
 test-results/
+.wrangler
