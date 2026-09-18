@@ -162,14 +162,8 @@
         transition: color 0.3s ease;
 
         &:first-of-type {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
-        }
-
-        &:last-of-type {
-            font-size: 14px;
-            height: auto;
-            color: #555555;
         }
     }
 }
