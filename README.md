@@ -1,5 +1,11 @@
 # BB 21st Portal (Legacy)
-This website has been migrated to a new infrastructure hosted on Cloudflare Workers.
-https://portal.bb21coy.workers.dev
 
-The current page will continue to operate until 2026-10-01, where it would be fully discontinued
+This repository contains the legacy BB 21st Portal, which was officially discontinued on **1 October 2026**.
+
+The portal has migrated to a new infrastructure powered by Cloudflare Workers.
+
+**New Portal:** https://portal.bb21coy.workers.dev
+
+All traffic to the legacy website is now permanently redirected to the new portal using HTTP 301 redirects.
+
+The legacy application is no longer maintained, and its original functionality has been removed in favour of a lightweight static redirect.
